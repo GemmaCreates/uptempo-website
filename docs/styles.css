@@ -80,6 +80,10 @@ a:hover {
   text-decoration: none;
 }
 
+.main-nav {
+  margin-left: auto;
+}
+
 .main-nav a {
   font-size: 15px;
   font-weight: 500;
