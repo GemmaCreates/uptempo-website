@@ -66,10 +66,11 @@ a:hover {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .logo {
@@ -81,7 +82,8 @@ a:hover {
 }
 
 .main-nav {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
 }
 
 .main-nav a {
