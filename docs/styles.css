@@ -384,9 +384,20 @@ a:hover {
   margin: 8px 0;
 }
 
+.support-email {
+  font-size: 24px !important;
+  margin: 24px 0 !important;
+}
+
+.support-email a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .support-note {
   color: var(--muted);
   font-size: 16px !important;
+  margin-top: 32px !important;
 }
 
 @media (min-width: 768px) {
