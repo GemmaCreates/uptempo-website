@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stadium Music: Walkout Tracks - Uptempo Enterprises</title>
+  <meta name="description" content="Stadium Music: Walkout Tracks helps baseball and softball coaches manage walkout music. Parents can submit songs via Team Link, and coaches approve and play clips in Gameday mode.">
+  <style>
+    :root {
+      --bg1: #667eea;
+      --bg2: #764ba2;
+      --card: #ffffff;
+      --text: #1a202c;
+      --muted: #4a5568;
+      --muted2: #718096;
+      --border: #e2e8f0;
+      --accent: #667eea;
+      --accent2: #0A84FF;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.30);
+      --radius: 16px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .container {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #0A84FF 0%, #0060DF 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(10, 132, 255, 0.25);
+      border: 1px solid rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+
+    .icon svg {
+      width: 56px;
+      height: 56px;
+      opacity: 0.98;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.18));
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 16px;
+      margin-top: 6px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: #f7fafc;
+      border: 1px solid #edf2f7;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent2);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      border: 1px solid transparent;
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, border 120ms ease;
+      user-select: none;
+    }
+
+    .btn:active { transform: translateY(1px); }
+
+    .btn-primary {
+      background: var(--accent2);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(10, 132, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: #0b79e6;
+      box-shadow: 0 12px 26px rgba(10, 132, 255, 0.30);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: #cbd5e0;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+
+    .btn-tertiary {
+      background: #f7fafc;
+      color: var(--text);
+      border-color: #edf2f7;
+    }
+
+    .btn-tertiary:hover {
+      border-color: #e2e8f0;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: #2d3748;
+    }
+
+    p { margin-bottom: 14px; color: #2d3748; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .card-title {
+      font-weight: 800;
+      color: #2d3748;
+      margin-bottom: 6px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: #1a202c;
+      background: #edf2ff;
+      border: 1px solid #dbeafe;
+      border-radius: 999px;
+      padding: 2px 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: #2d3748;
+    }
+
+    li { margin-bottom: 8px; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    .contact {
+      background: #f7fafc;
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 6px;
+      margin-top: 16px;
+    }
+
+    .contact p { margin-bottom: 6px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .fineprint {
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted2);
+      font-size: 13px;
+    }
+
+    .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+      color: var(--muted2);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      body { padding: 24px 14px; }
+      .container { padding: 24px; }
+      .header { grid-template-columns: 72px 1fr; }
+      .icon { width: 72px; height: 72px; border-radius: 18px; }
+      .icon svg { width: 44px; height: 44px; }
+      h1 { font-size: 24px; }
+      .grid, .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon" aria-hidden="true">
+        <!-- Simple megaphone mark (inline SVG) -->
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M3.5 10.5v3.2c0 .5.3.9.8 1l3.4 1V9.5l-3.4 1c-.5.1-.8.5-.8 1Z" fill="#fff"/>
+          <path d="M8.2 9.2 18.6 5.8c.8-.3 1.6.3 1.6 1.1v10.3c0 .8-.8 1.4-1.6 1.1L8.2 15V9.2Z" fill="#fff" opacity="0.95"/>
+          <path d="M9.1 15.5v2.2c0 1.6 1.3 2.9 2.9 2.9h.2c.6 0 1.1-.5 1.1-1.1v-1.8l-4.2-2.2Z" fill="#fff" opacity="0.95"/>
+          <path d="M20.3 10.4c1 .6 1.7 1.7 1.7 3s-.7 2.4-1.7 3" stroke="#fff" stroke-width="1.7" stroke-linecap="round" opacity="0.95"/>
+          <path d="M18.9 11.3c.6.4 1 .9 1 1.8s-.4 1.4-1 1.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round" opacity="0.85"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Stadium Music: Walkout Tracks</h1>
+        <p class="subtitle">Walkout music management for baseball &amp; softball — built for coaches, parents, and real game day pressure.</p>
+        <div class="badges">
+          <span class="badge"><span class="badge-dot"></span> iOS 16+</span>
+          <span class="badge"><span class="badge-dot"></span> Apple Music + Local Files</span>
+          <span class="badge"><span class="badge-dot"></span> Team Link Submissions</span>
+          <span class="badge"><span class="badge-dot"></span> Fast Gameday Mode</span>
+        </div>
+        <div class="cta-row">
+          <!-- App Store link (add your App Store URL once live) -->
+          <a class="btn btn-primary" href="#" aria-label="Download on the App Store (link coming soon)">
+            Download on the App Store (coming soon)
+          </a>
+          <a class="btn btn-secondary" href="mailto:info@uptempoenterprises.com">Contact Support</a>
+          <a class="btn btn-tertiary" href="stadium-music/privacy-policy.html">Privacy Policy</a>
+          <a class="btn btn-tertiary" href="stadium-music/terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>What it does</h2>
+    <p>
+      Stadium Music: Walkout Tracks makes it easy to create a team, add players, assign walkout songs, and run a clean,
+      tap-to-play game day experience. Parents can submit song requests via a simple web form using Team Link, and you can
+      approve submissions inside the app.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">
+          <span class="chip">COACHES</span> Run walkout music in seconds
+        </div>
+        <ul>
+          <li>Create your team and roster</li>
+          <li>Assign songs via Apple Music or local files</li>
+          <li>Set clip start time + duration per player</li>
+          <li>Use Gameday Mode for fast playback</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span class="chip">PARENTS</span> Submit songs without an app
+        </div>
+        <ul>
+          <li>Open the Team Link on any phone</li>
+          <li>Paste an Apple Music link to the song</li>
+          <li>Add optional start time + notes</li>
+          <li>Coach reviews and approves</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Key features</h2>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Team Link <span class="chip">UNIQUE</span></div>
+        <p>
+          Generate a shareable URL or QR code so parents can submit walkout song requests. No login required.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Apple Music integration</div>
+        <p>
+          Search and play songs from Apple Music using MusicKit. Playback typically requires an active Apple Music subscription.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Local file support</div>
+        <p>
+          Import MP3/M4A files from the Files app for custom audio, local artists, or anything not on Apple Music.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Gameday mode</div>
+        <p>
+          Big, tappable controls designed for outdoor visibility and quick player introductions.
+        </p>
+      </div>
+    </div>
+
+    <h2>Requirements</h2>
+    <ul>
+      <li><strong>iOS 16.0+</strong></li>
+      <li><strong>Internet connection</strong> for Apple Music search/streaming and Team Link submissions</li>
+      <li><strong>Apple Music subscription</strong> for full Apple Music playback</li>
+    </ul>
+
+    <h2>Support</h2>
+    <div class="contact">
+      <p><strong>Email:</strong> <a href="mailto:info@uptempoenterprises.com">info@uptempoenterprises.com</a></p>
+      <p><strong>Website:</strong> <a href="https://uptempoenterprises.com">uptempoenterprises.com</a></p>
+      <div class="links-row">
+        <span>Policies:</span>
+        <a href="stadium-music/privacy-policy.html">Privacy Policy</a>
+        <span>•</span>
+        <a href="stadium-music/terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+
+    <p class="fineprint">
+      Last Updated: December 2025 • Stadium Music: Walkout Tracks is a product of Uptempo Enterprises.
+      Apple Music is a trademark of Apple Inc. Use of Apple Music features is subject to Apple's terms.
+    </p>
+  </div>
+</body>
+</html>
+
