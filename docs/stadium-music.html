@@ -309,72 +309,6 @@
       font-weight: 600;
     }
 
-    .support-footer {
-      background: var(--white);
-      border-top: 0.5px solid var(--border);
-      padding: 48px 0;
-      margin-top: 48px;
-    }
-
-    .support-content {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .support-content h2 {
-      font-size: 28px;
-      font-weight: 600;
-      color: var(--text);
-      margin: 0 0 16px 0;
-      letter-spacing: -0.015em;
-    }
-
-    .support-info {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .support-info p {
-      font-size: 17px;
-      color: var(--text);
-      margin: 0;
-    }
-
-    .support-info a {
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .policy-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      align-items: center;
-      margin-top: 8px;
-    }
-
-    .policy-links a {
-      font-size: 15px;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .policy-links a:hover {
-      color: var(--accent);
-    }
-
-    .fineprint {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 0.5px solid var(--border);
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
     @media (min-width: 900px) {
       .stadium-hero-content {
         grid-template-columns: 1fr 1fr;
@@ -400,12 +334,6 @@
 
       .step-number {
         margin: 0 auto;
-      }
-
-      .support-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
       }
     }
 
@@ -551,31 +479,12 @@
       </div>
     </section>
 
-    <!-- Support + Footer -->
-    <section class="support-footer">
-      <div class="container">
-        <div class="support-content">
-          <div>
-            <h2>Support</h2>
-            <div class="support-info">
-              <p><strong>Email:</strong> <a href="mailto:info@uptempoenterprises.com">info@uptempoenterprises.com</a></p>
-              <p><strong>Website:</strong> <a href="https://uptempoenterprises.com">uptempoenterprises.com</a></p>
-              <div class="policy-links">
-                <span>Policies:</span>
-                <a href="stadium-music/privacy-policy.html">Privacy Policy</a>
-                <span>•</span>
-                <a href="stadium-music/terms-of-service.html">Terms of Service</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p class="fineprint">
-          Last Updated: December 2025 • Stadium Music: Walkout Tracks is a product of Uptempo Enterprises.<br>
-          Apple Music is a trademark of Apple Inc. Use of Apple Music features is subject to Apple's terms.
-        </p>
-      </div>
-    </section>
   </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div>Uptempo Enterprises LLC</div>
+    </div>
+  </footer>
 </body>
 </html>
