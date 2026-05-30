@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Uptempo Enterprises — Digital Product Lab</title>
-    <meta name="description" content="Simple products that help people in their everyday lives." />
-    <meta property="og:title" content="Uptempo Enterprises — Digital Product Lab." />
-    <meta property="og:description" content="Simple products that help people in their everyday lives." />
-    <meta property="og:image" content="../assets/og-image.svg" />
-    <link rel="icon" href="../assets/favicon.svg" />
-    
+    <title>Uptempo Enterprises - Small Software Businesses</title>
+    <meta name="description" content="Uptempo Enterprises builds and operates small, useful software businesses for everyday workflows." />
+    <meta property="og:title" content="Uptempo Enterprises - Small Software Businesses" />
+    <meta property="og:description" content="We build and operate a focused portfolio of simple, useful software products." />
+    <meta property="og:image" content="/assets/og-image.svg" />
+    <link rel="icon" href="/assets/favicon.svg" />
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F18NH46WN"></script>
     <script>
@@ -18,142 +18,215 @@
       gtag('js', new Date());
       gtag('config', 'G-1F18NH46WN');
     </script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header" role="banner">
       <div class="container header-container">
         <a href="/" class="logo">Uptempo Enterprises</a>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#approach">Approach</a>
           <a href="/support.html">Support</a>
+          <a href="mailto:info@uptempoenterprises.com">Contact</a>
         </nav>
       </div>
     </header>
 
     <main role="main">
-      <section id="hero" class="section hero">
-        <div class="container">
-          <h1>Uptempo Enterprises</h1>
-          <p class="subhead">Digital Product Lab</p>
-          <p class="tagline">We make simple products that help people in their everyday lives.</p>
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Independent product company</p>
+            <h1>We build and operate small, useful software businesses.</h1>
+            <p class="tagline">
+              Uptempo Enterprises owns a focused portfolio of practical apps and digital products for families, creators, coaches, and everyday operators.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a href="#portfolio" class="btn btn-primary">View portfolio</a>
+              <a href="mailto:info@uptempoenterprises.com" class="btn btn-secondary">Start a conversation</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Company focus">
+            <div class="hero-panel-kicker">Operating thesis</div>
+            <p>
+              Useful products do not need to be loud. We favor focused workflows, clear customer promises, and long-term maintenance over short-lived launches.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="products" class="section products">
-        <div class="container">
-          <article class="product">
-            <div class="product-text">
-              <h2>GoTime — Potty training app</h2>
-              <p>Make potty training fun with timers, sticker rewards, and celebration music.</p>
-              <ul>
-                <li>Timer to encourage sitting on the potty</li>
-                <li>Streaks and sticker rewards</li>
-                <li>Playful music for a potty party</li>
-              </ul>
-              <p><a href="https://apps.apple.com/us/app/go-time-potty-training/id6753195117" class="app-store-link">Download on the App Store</a></p>
-            </div>
-            <div class="product-media">
-              <img src="./assets/go-time-logo.png" alt="GoTime Potty Training logo" />
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product-text">
-              <h2>Growbie — Milestone Mapping app for children</h2>
-              <p>Track milestone progress and celebrate growth with a clear, calming view.</p>
-              <ul>
-                <li>Age‑appropriate milestones at a glance</li>
-                <li>Gentle reminders and progress snapshots</li>
-                <li>Private by default</li>
-              </ul>
-              <p><a href="https://apps.apple.com/us/app/growbie/id6752531303" class="app-store-link">Download on the App Store</a></p>
-            </div>
-            <div class="product-media">
-              <img src="./assets/growbie-icon.png" alt="Growbie logo" />
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product-text">
-              <h2>Stadium Music: Walkout Tracks</h2>
-              <p>Walkout music management for baseball &amp; softball — built for coaches, parents, and real game day pressure.</p>
-              <ul>
-                <li>Create teams and assign walkout songs</li>
-                <li>Apple Music integration and local file support</li>
-                <li>Fast Gameday Mode for one-tap playback</li>
-              </ul>
-              <p><a href="/stadium-music" class="app-store-link">Learn more</a></p>
-            </div>
-            <div class="product-media">
-              <img src="./assets/Stadium-Music-icon.png" alt="Stadium Music: Walkout Tracks logo" />
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product-text">
-              <h2>Photo Packs — Easy export of galleries</h2>
-              <p>Client-ready galleries on your iPhone or iPad. Works offline. Resize, rename, watermark, ZIP, and export PDF contact sheets.</p>
-              <ul>
-                <li>Works offline — no cloud required</li>
-                <li>Client-aware filenames — pack name, date, sequence</li>
-                <li>Resize &amp; convert, watermarks, ZIP, PDF contact sheets</li>
-              </ul>
-              <p><a href="https://apps.apple.com/us/app/photo-packs/id6759537566" class="app-store-link">Download on the App Store</a></p>
-            </div>
-            <div class="product-media">
-              <img src="./assets/photo-gallery-pack-icon.png?v=20260530" alt="Photo Packs logo" />
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product-text">
-              <h2>Race Ready 5K — Beginner run/walk race plan</h2>
-              <p>Calm first-5K prep for beginners. Build a simple run/walk plan, know what to do today, and keep race week organized.</p>
-              <ul>
-                <li>Beginner-friendly plan from your race date</li>
-                <li>Today workout guidance and simple interval timer</li>
-                <li>Race-week checklist support</li>
-              </ul>
-              <p><a href="/race-ready-5k/privacy-policy.html" class="app-store-link">Privacy Policy</a></p>
-            </div>
-            <div class="product-media">
-              <img src="./assets/race-ready-5k-icon.png" alt="Race Ready 5K logo" />
-            </div>
-          </article>
-
-          <article class="product">
-            <div class="product-text">
-              <h2>TheSavvyChefs.com — homegoods ecommerce store</h2>
-              <p>Curated kitchen tools and home goods for everyday craft.</p>
-              <ul>
-                <li>Small‑batch, practical picks</li>
-                <li>Clear specs, simple care notes</li>
-                <li>Seasonal drops</li>
-              </ul>
-            </div>
-            <div class="product-media">
-              <img src="./assets/TheSavvyChefs.png" alt="The Savvy Chefs logo" />
-            </div>
-          </article>
+      <section class="metrics-band" aria-label="Company metrics">
+        <div class="container metrics-grid">
+          <div>
+            <strong>6</strong>
+            <span>Products and properties</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>Active product categories</span>
+          </div>
+          <div>
+            <strong>iOS</strong>
+            <span>Primary software platform</span>
+          </div>
+          <div>
+            <strong>LLC</strong>
+            <span>Founder-owned operator</span>
+          </div>
         </div>
       </section>
 
-      <section id="cta" class="section cta">
+      <section id="portfolio" class="section portfolio-section">
         <div class="container">
-          <h2 class="cta-heading">Want to work with us? <a href="mailto:info@uptempoenterprises.com">Get in touch</a></h2>
+          <div class="section-heading">
+            <p class="eyebrow">Portfolio</p>
+            <h2>A family of focused products.</h2>
+            <p>
+              Each product is built around a specific job: plan the day, deliver the work, run the game, track progress, or sell with care.
+            </p>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <div class="portfolio-card-header">
+                <img src="./assets/go-time-logo.png" width="72" height="72" alt="GoTime Potty Training logo" />
+                <span class="status-badge status-live">Live</span>
+              </div>
+              <p class="portfolio-category">Family tools</p>
+              <h3>GoTime</h3>
+              <p>Potty training timers, sticker rewards, and celebration music for families.</p>
+              <a href="https://apps.apple.com/us/app/go-time-potty-training/id6753195117">Download on the App Store</a>
+            </article>
+
+            <article class="portfolio-card">
+              <div class="portfolio-card-header">
+                <img src="./assets/growbie-icon.png" width="72" height="72" alt="Growbie logo" />
+                <span class="status-badge status-live">Live</span>
+              </div>
+              <p class="portfolio-category">Family tools</p>
+              <h3>Growbie</h3>
+              <p>Milestone mapping for children with calm progress views and private tracking.</p>
+              <a href="https://apps.apple.com/us/app/growbie/id6752531303">Download on the App Store</a>
+            </article>
+
+            <article class="portfolio-card featured-card">
+              <div class="portfolio-card-header">
+                <img src="./assets/Stadium-Music-icon.png" width="72" height="72" alt="Stadium Music: Walkout Tracks logo" />
+                <span class="status-badge status-soon">Coming soon</span>
+              </div>
+              <p class="portfolio-category">Sports operations</p>
+              <h3>Stadium Music</h3>
+              <p>Walkout music management for baseball and softball teams under real game-day pressure.</p>
+              <a href="/stadium-music">Learn more</a>
+            </article>
+
+            <article class="portfolio-card">
+              <div class="portfolio-card-header">
+                <img src="./assets/photo-gallery-pack-icon.png?v=20260530" width="72" height="72" alt="Photo Packs logo" />
+                <span class="status-badge status-live">Live</span>
+              </div>
+              <p class="portfolio-category">Creator workflow</p>
+              <h3>Photo Packs</h3>
+              <p>Easy export of client-ready galleries, ZIP files, watermarks, and PDF contact sheets.</p>
+              <a href="https://apps.apple.com/us/app/photo-packs/id6759537566">Download on the App Store</a>
+            </article>
+
+            <article class="portfolio-card">
+              <div class="portfolio-card-header">
+                <img src="./assets/race-ready-5k-icon.png" width="72" height="72" alt="Race Ready 5K logo" />
+                <span class="status-badge status-building">In development</span>
+              </div>
+              <p class="portfolio-category">Health planning</p>
+              <h3>Race Ready 5K</h3>
+              <p>Beginner run/walk race planning with daily guidance and race-week organization.</p>
+              <a href="/race-ready-5k/privacy-policy.html">Privacy policy</a>
+            </article>
+
+            <article class="portfolio-card">
+              <div class="portfolio-card-header">
+                <img src="./assets/TheSavvyChefs.png" width="120" height="63" alt="The Savvy Chefs logo" />
+                <span class="status-badge status-storefront">Storefront</span>
+              </div>
+              <p class="portfolio-category">Commerce</p>
+              <h3>TheSavvyChefs.com</h3>
+              <p>Curated kitchen tools and home goods for practical everyday craft.</p>
+              <a href="mailto:info@uptempoenterprises.com?subject=TheSavvyChefs.com">Contact about this property</a>
+            </article>
+          </div>
         </div>
       </section>
-      
+
+      <section id="approach" class="section approach-section">
+        <div class="container approach-grid">
+          <div class="section-heading compact">
+            <p class="eyebrow">Approach</p>
+            <h2>Built for durable usefulness.</h2>
+            <p>
+              Uptempo is organized around products that can be understood quickly, maintained responsibly, and improved over time.
+            </p>
+          </div>
+
+          <div class="principles-grid">
+            <article>
+              <h3>Specific jobs</h3>
+              <p>We choose narrow workflows where simple software can remove real friction.</p>
+            </article>
+            <article>
+              <h3>Long-term care</h3>
+              <p>Products are operated as assets, not one-off experiments.</p>
+            </article>
+            <article>
+              <h3>Practical privacy</h3>
+              <p>We prefer local-first and low-account experiences when the product allows it.</p>
+            </article>
+            <article>
+              <h3>Clear promises</h3>
+              <p>Every product should explain who it serves and what it does in one sentence.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section acquisition-section">
+        <div class="container acquisition-card">
+          <div>
+            <p class="eyebrow">Partnerships</p>
+            <h2>Have a small software business that deserves a long-term home?</h2>
+            <p>
+              We are interested in focused apps, niche software, and practical digital products with clear customers and room for careful operation.
+            </p>
+          </div>
+          <a href="mailto:info@uptempoenterprises.com?subject=Uptempo%20partnership%20conversation" class="btn btn-primary">Get in touch</a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer" role="contentinfo">
-      <div class="container">
-        <div>Uptempo Enterprises LLC</div>
+      <div class="container footer-grid">
+        <div>
+          <a href="/" class="footer-logo">Uptempo Enterprises</a>
+          <p>Small, useful software businesses operated with long-term care.</p>
+        </div>
+        <nav aria-label="Footer company links">
+          <h2>Company</h2>
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#approach">Approach</a>
+          <a href="mailto:info@uptempoenterprises.com">Contact</a>
+        </nav>
+        <nav aria-label="Footer support links">
+          <h2>Support</h2>
+          <a href="/support.html">Support hub</a>
+          <a href="/stadium-music/privacy-policy.html">Stadium Music privacy</a>
+          <a href="/photo-gallery-pack/privacy-policy.html">Photo Packs privacy</a>
+          <a href="/race-ready-5k/privacy-policy.html">Race Ready 5K privacy</a>
+        </nav>
       </div>
     </footer>
   </body>
-  </html>
+</html>

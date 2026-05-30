@@ -217,7 +217,7 @@
     }
 
     .card li:before {
-      content: "•";
+      content: "\2022";
       position: absolute;
       left: 0;
       color: var(--accent);
@@ -282,7 +282,7 @@
     }
 
     .requirements-list li:before {
-      content: "•";
+      content: "\2022";
       position: absolute;
       left: 0;
       color: var(--accent);
@@ -344,10 +344,11 @@
   <header class="site-header" role="banner">
     <div class="container header-container">
       <a href="/" class="logo">Uptempo Enterprises</a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/#portfolio">Portfolio</a>
+        <a href="/#approach">Approach</a>
         <a href="/support.html">Support</a>
-        <a href="stadium-music/privacy-policy.html">Privacy</a>
-        <a href="stadium-music/terms-of-service.html">Terms</a>
+        <a href="mailto:info@uptempoenterprises.com">Contact</a>
       </nav>
     </div>
   </header>
@@ -359,7 +360,7 @@
         <div class="stadium-hero-content">
           <div class="stadium-hero-text">
             <h1>Stadium Music: Walkout Tracks</h1>
-            <p class="subhead">Walkout music management for baseball &amp; softball — built for coaches, parents, and real game day pressure.</p>
+            <p class="subhead">Walkout music management for baseball &amp; softball - built for coaches, parents, and real game day pressure.</p>
 
             <div class="cta-group">
               <a href="#" class="btn-primary coming-soon" disabled aria-label="Download on the App Store (coming soon)">
@@ -468,9 +469,9 @@
 
         <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
           <a href="/support.html" style="color: var(--accent); text-decoration: none; font-size: 15px; font-weight: 500;">Support</a>
-          <span style="color: var(--muted);">•</span>
+          <span style="color: var(--muted);">&middot;</span>
           <a href="stadium-music/privacy-policy.html" style="color: var(--accent); text-decoration: none; font-size: 15px; font-weight: 500;">Privacy Policy</a>
-          <span style="color: var(--muted);">•</span>
+          <span style="color: var(--muted);">&middot;</span>
           <a href="stadium-music/terms-of-service.html" style="color: var(--accent); text-decoration: none; font-size: 15px; font-weight: 500;">Terms of Service</a>
         </div>
       </div>
@@ -479,8 +480,24 @@
   </main>
 
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div>Uptempo Enterprises LLC</div>
+    <div class="container footer-grid">
+      <div>
+        <a href="/" class="footer-logo">Uptempo Enterprises</a>
+        <p>Small, useful software businesses operated with long-term care.</p>
+      </div>
+      <nav aria-label="Footer company links">
+        <h2>Company</h2>
+        <a href="/#portfolio">Portfolio</a>
+        <a href="/#approach">Approach</a>
+        <a href="mailto:info@uptempoenterprises.com">Contact</a>
+      </nav>
+      <nav aria-label="Footer support links">
+        <h2>Support</h2>
+        <a href="/support.html">Support hub</a>
+        <a href="/stadium-music/privacy-policy.html">Stadium Music privacy</a>
+        <a href="/stadium-music/terms-of-service.html">Stadium Music terms</a>
+        <a href="/photo-gallery-pack/privacy-policy.html">Photo Packs privacy</a>
+      </nav>
     </div>
   </footer>
 </body>
