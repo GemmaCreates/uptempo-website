@@ -208,10 +208,7 @@ a:hover {
 }
 
 .hero-grid {
-  align-items: end;
-  display: grid;
-  gap: 48px;
-  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.75fr);
+  max-width: 940px;
 }
 
 .hero-copy h1 {
@@ -236,29 +233,6 @@ a:hover {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 32px;
-}
-
-.hero-panel {
-  background: #fff8f3;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 28px;
-}
-
-.hero-panel-kicker {
-  color: var(--accent-strong);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  margin: 0 0 12px;
-  text-transform: uppercase;
-}
-
-.hero-panel p {
-  color: var(--text);
-  font-size: 18px;
-  line-height: 1.65;
 }
 
 /* Portfolio */
@@ -581,7 +555,6 @@ a:hover {
 }
 
 @media (max-width: 940px) {
-  .hero-grid,
   .acquisition-card {
     grid-template-columns: 1fr;
   }
@@ -627,7 +600,6 @@ a:hover {
     font-size: clamp(42px, 14vw, 58px);
   }
 
-  .hero-panel,
   .acquisition-card {
     padding: 24px;
   }
