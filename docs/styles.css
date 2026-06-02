@@ -204,14 +204,14 @@ a:hover {
   background:
     radial-gradient(circle at top right, rgba(16, 139, 124, 0.14), transparent 34%),
     linear-gradient(180deg, #fffdf9 0%, var(--bg) 100%);
-  padding: 104px 0 92px;
+  padding: 96px 0 84px;
 }
 
 .hero-grid {
   align-items: center;
   display: grid;
-  gap: 54px;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: 48px;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.62fr);
 }
 
 .hero-copy h1 {
@@ -239,11 +239,14 @@ a:hover {
 }
 
 .hero-illustration {
+  justify-self: end;
+  max-width: 420px;
   min-width: 0;
+  width: 100%;
 }
 
 .hero-illustration img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 5 / 4;
   border: 1px solid rgba(234, 223, 206, 0.8);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -383,8 +386,8 @@ a:hover {
 .studio-grid {
   align-items: center;
   display: grid;
-  gap: 42px;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.78fr);
+  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.66fr);
 }
 
 .studio-copy {
@@ -393,7 +396,7 @@ a:hover {
 
 .studio-illustration {
   margin-left: auto;
-  max-width: 520px;
+  max-width: 440px;
   min-width: 0;
   width: 100%;
 }
@@ -617,6 +620,11 @@ a:hover {
   .footer-grid > div {
     grid-column: 1 / -1;
   }
+
+  .hero-illustration {
+    justify-self: start;
+    max-width: 560px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -649,6 +657,7 @@ a:hover {
 
   .hero-illustration {
     margin-top: 34px;
+    max-width: none;
   }
 
   .studio-illustration {
