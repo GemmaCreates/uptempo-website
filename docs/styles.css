@@ -355,9 +355,9 @@ a:hover {
 }
 
 .status-live {
-  background: #e9f8f4;
-  border-color: #bde6db;
-  color: #0c766a;
+  background: #fff8ef;
+  border-color: #eadfce;
+  color: var(--text);
 }
 
 .status-soon {
