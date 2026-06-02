@@ -286,11 +286,6 @@ a:hover {
   padding: 22px;
 }
 
-.portfolio-card.featured-card {
-  background: #f7f2ff;
-  border-color: #ddd0f7;
-}
-
 .portfolio-card-header {
   align-items: flex-start;
   display: flex;
