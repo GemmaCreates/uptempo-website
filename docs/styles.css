@@ -208,7 +208,10 @@ a:hover {
 }
 
 .hero-grid {
-  max-width: 1040px;
+  align-items: center;
+  display: grid;
+  gap: 54px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
 }
 
 .hero-copy h1 {
@@ -236,30 +239,32 @@ a:hover {
 }
 
 .hero-illustration {
-  margin-top: 46px;
+  min-width: 0;
 }
 
 .hero-illustration img {
+  aspect-ratio: 4 / 3;
   border: 1px solid rgba(234, 223, 206, 0.8);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
 .section-illustration img {
+  aspect-ratio: 16 / 9;
   border: 1px solid rgba(234, 223, 206, 0.8);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
 /* Portfolio */
 .portfolio-section {
   background: var(--surface-strong);
-}
-
-.product-illustration {
-  margin: 0 0 28px;
 }
 
 .portfolio-grid {
@@ -379,11 +384,18 @@ a:hover {
   align-items: center;
   display: grid;
   gap: 42px;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.78fr);
 }
 
 .studio-copy {
   min-width: 0;
+}
+
+.studio-illustration {
+  margin-left: auto;
+  max-width: 520px;
+  min-width: 0;
+  width: 100%;
 }
 
 /* CTA */
@@ -588,6 +600,7 @@ a:hover {
 }
 
 @media (max-width: 940px) {
+  .hero-grid,
   .studio-grid,
   .acquisition-card {
     grid-template-columns: 1fr;
@@ -638,8 +651,8 @@ a:hover {
     margin-top: 34px;
   }
 
-  .product-illustration {
-    margin-bottom: 22px;
+  .studio-illustration {
+    max-width: none;
   }
 
   .acquisition-card {
