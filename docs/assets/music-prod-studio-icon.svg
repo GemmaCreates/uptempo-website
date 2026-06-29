@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" role="img" aria-labelledby="title desc">
+  <title>Music Prod Studio icon</title>
+  <desc>Dark rounded square with a waveform, music note, and studio spark.</desc>
+  <defs>
+    <linearGradient id="mps-bg" x1="8" y1="6" x2="64" y2="66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#211b2f" />
+      <stop offset="1" stop-color="#342f45" />
+    </linearGradient>
+    <linearGradient id="mps-accent" x1="16" y1="18" x2="58" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9b7cf6" />
+      <stop offset="1" stop-color="#f29f72" />
+    </linearGradient>
+  </defs>
+  <rect width="72" height="72" rx="18" fill="url(#mps-bg)" />
+  <path d="M17 40 v-8 M25 45 V27 M33 50 V22 M41 45 V27 M49 40 v-8" fill="none" stroke="url(#mps-accent)" stroke-width="4" stroke-linecap="round" />
+  <path d="M46 24 v24 a7 7 0 1 1 -4 -6.3 V20 l13 4 v6z" fill="#ffffff" opacity="0.94" />
+  <path d="M57 13 v7 M60.5 16.5 h-7" fill="none" stroke="#f29f72" stroke-width="3" stroke-linecap="round" />
+</svg>
