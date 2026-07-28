@@ -573,6 +573,18 @@ a:hover {
   font-weight: 800;
 }
 
+.support-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.support-card-actions a {
+  border-bottom: 1px solid rgba(155, 124, 246, 0.42);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 /* Legacy Stadium Music support */
 .products {
   background: var(--surface-strong);
