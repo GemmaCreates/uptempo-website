@@ -1,15 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Uptempo Enterprises - Product Creation Studio</title>
-    <meta name="description" content="Uptempo Enterprises is a product creation studio building useful apps for everyday life." />
-    <meta property="og:title" content="Uptempo Enterprises - Product Creation Studio" />
-    <meta property="og:description" content="A product creation studio building useful apps for everyday life." />
-    <meta property="og:image" content="/assets/og-image.svg" />
-    <link rel="icon" href="/assets/favicon.svg" />
-
+    <title>Uptempo Enterprises | Digital Product Lab</title>
+    <meta name="description" content="Uptempo Enterprises is a digital product lab bringing creative ideas to life through original apps and online stores." />
+    <meta name="theme-color" content="#17152f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Uptempo Enterprises | Bringing creative ideas to life" />
+    <meta property="og:description" content="Original apps and online stores from Uptempo Enterprises, a digital product lab." />
+    <meta property="og:image" content="https://www.uptempoenterprises.com/assets/uptempo-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Uptempo Enterprises bringing creative ideas to life, with six original app icons" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Uptempo Enterprises | Bringing creative ideas to life" />
+    <meta name="twitter:description" content="Original apps and online stores from Uptempo Enterprises, a digital product lab." />
+    <meta name="twitter:image" content="https://www.uptempoenterprises.com/assets/uptempo-og.png" />
+    <link rel="canonical" href="https://www.uptempoenterprises.com/" />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./home.css" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F18NH46WN"></script>
     <script>
@@ -18,196 +28,181 @@
       gtag('js', new Date());
       gtag('config', 'G-1F18NH46WN');
     </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Uptempo Enterprises LLC",
+        "url": "https://www.uptempoenterprises.com/",
+        "email": "info@uptempoenterprises.com",
+        "sameAs": [
+          "https://maliatravel.com",
+          "https://thesavvychefs.com",
+          "https://apps.apple.com/us/developer/uptempo-enterprises-llc/id1755114816"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <header class="site-header" role="banner">
-      <div class="container header-container">
-        <a href="/" class="logo">Uptempo Enterprises</a>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <a href="/#products">Products</a>
-          <a href="/#studio">Studio</a>
-          <a href="/support.html">Support</a>
-          <a href="mailto:info@uptempoenterprises.com">Contact</a>
-        </nav>
-      </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Uptempo Enterprises home">
+        <span class="brand-mark" aria-hidden="true">U</span>
+        <span>Uptempo</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#apps">Apps</a>
+        <a href="#stores">Stores</a>
+        <a href="./support.html">Support</a>
+      </nav>
     </header>
 
-    <main role="main">
-      <section id="hero" class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Product creation studio</p>
-            <h1>Useful apps for everyday life.</h1>
-            <p class="tagline">
-              Uptempo Enterprises builds practical digital products for families, creators, coaches, and people who want everyday tasks to feel easier.
-            </p>
-            <div class="hero-actions" aria-label="Primary actions">
-              <a href="#products" class="btn btn-primary">See what we make</a>
-              <a href="mailto:info@uptempoenterprises.com" class="btn btn-secondary">Say hello</a>
-            </div>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Digital Product Lab</p>
+          <h1 id="hero-title">Bringing creative ideas to life.</h1>
+          <p class="hero-lede">Uptempo Enterprises builds original apps and online stores around ideas we want to see in the world.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#apps">Explore our apps</a>
+            <a class="button button-secondary" href="#stores">Visit our stores</a>
           </div>
+        </div>
 
-          <div class="hero-illustration" aria-hidden="true">
-            <img src="./assets/helpful-apps-clean.jpg?v=d4376a3" width="1536" height="1024" alt="" />
+        <div class="idea-board" aria-label="Apps from Uptempo Enterprises">
+          <div class="idea-board-heading">
+            <span>Ideas brought to life</span>
+            <span class="idea-count">6 apps</span>
+          </div>
+          <div class="idea-icons">
+            <img src="./assets/apps/go-time.jpg" alt="Go Time app icon" width="512" height="512" />
+            <img src="./assets/apps/race-ready.jpg" alt="Race Ready 5K app icon" width="512" height="512" />
+            <img src="./assets/apps/tiny-claw.jpg" alt="Tiny Claw Game app icon" width="512" height="512" />
+            <img src="./assets/apps/stadium-music.jpg" alt="Stadium Music app icon" width="512" height="512" />
+            <img src="./assets/apps/photo-packs.jpg" alt="Photo Packs app icon" width="512" height="512" />
+            <img src="./assets/apps/growbie.jpg" alt="Growbie app icon" width="512" height="512" />
           </div>
         </div>
       </section>
 
-      <section id="products" class="section portfolio-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">What we make</p>
-            <h2>Helpful products with a clear purpose.</h2>
-            <p>
-              Some help at home. Some help at the field. Some help creators and producers package their work. The goal is simple: make useful tasks easier and more pleasant.
-            </p>
-          </div>
+      <section class="section apps-section" id="apps" aria-labelledby="apps-title">
+        <div class="section-heading">
+          <p class="eyebrow">Our apps</p>
+          <h2 id="apps-title">Ideas built for the App Store and web.</h2>
+          <p>We build for family routines, training plans, team music, photo work, play, and music creation.</p>
+        </div>
 
-          <div class="portfolio-grid">
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/go-time-logo.png" width="72" height="72" alt="GoTime Potty Training logo" />
-                <span class="status-badge status-live">Live</span>
-              </div>
-              <p class="portfolio-category">Family tools</p>
-              <h3>GoTime</h3>
-              <p>Potty training timers, sticker rewards, and celebration music for families.</p>
-              <a href="https://apps.apple.com/us/app/go-time-potty-training/id6753195117">Download on the App Store</a>
-            </article>
+        <div class="app-grid">
+          <article class="app-card app-card-featured">
+            <img src="./assets/apps/go-time.jpg" alt="" width="512" height="512" />
+            <div class="app-copy">
+              <p class="card-kicker">Family routine</p>
+              <h3>Go Time: Potty Training</h3>
+              <p>A 60-second potty timer with music, reminders, stars, and sticker rewards. Free with optional tips.</p>
+              <div class="card-links"><a class="text-link" href="./go-time/">See how it works</a><a class="text-link text-link-muted" href="https://apps.apple.com/app/apple-store/id6753195117?pt=128070534&amp;ct=uptempo_site&amp;mt=8">App Store</a></div>
+            </div>
+          </article>
 
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/growbie-icon.png" width="72" height="72" alt="Growbie logo" />
-                <span class="status-badge status-live">Live</span>
-              </div>
-              <p class="portfolio-category">Family health</p>
-              <h3>Growbie</h3>
-              <p>Growth curves, percentiles, and milestone tracking for families.</p>
-              <a href="https://apps.apple.com/us/app/growbie/id6752531303">Download on the App Store</a>
-            </article>
-
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/Stadium-Music-icon.png" width="72" height="72" alt="Stadium Music: Walkout Tracks logo" />
-                <span class="status-badge status-live">Live</span>
-              </div>
-              <p class="portfolio-category">Sports operations</p>
-              <h3>Stadium Music</h3>
-              <p>Walkout tracks for baseball and softball teams, made for game day.</p>
-              <a href="https://apps.apple.com/us/app/stadium-music-walkout-tracks/id6756856637">Download on the App Store</a>
-            </article>
-
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/photo-gallery-pack-icon.png?v=20260530" width="72" height="72" alt="Photo Packs logo" />
-                <span class="status-badge status-live">Live</span>
-              </div>
-              <p class="portfolio-category">Creator workflow</p>
-              <h3>Photo Packs</h3>
-              <p>Fast gallery exports for photographers who need client-ready files.</p>
-              <a href="https://apps.apple.com/us/app/photo-packs/id6759537566">Download on the App Store</a>
-            </article>
-
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/music-prod-studio-icon.svg" width="72" height="72" alt="Music Prod Studio logo" />
-                <span class="status-badge status-building">In development</span>
-              </div>
-              <p class="portfolio-category">Music creation</p>
-              <h3>Music Prod Studio</h3>
-              <p>AI vocals for producers turning beats into shareable song ideas.</p>
-              <a href="https://musicprodstudio.com">Visit the site</a>
-            </article>
-
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/race-ready-5k-icon.png" width="72" height="72" alt="Race Ready 5K logo" />
-                <span class="status-badge status-live">Live</span>
-              </div>
-              <p class="portfolio-category">Health planning</p>
+          <article class="app-card">
+            <img src="./assets/apps/race-ready.jpg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Beginner running</p>
               <h3>Race Ready 5K</h3>
-              <p>A gentle first-5K planner for beginners who want clear daily guidance.</p>
-              <a href="https://apps.apple.com/us/app/race-ready-5k/id6773779672">Download on the App Store</a>
-            </article>
+              <p>A run and walk plan that works backward from your 5K date. Week 1 is free. The full plan costs $4.99 once.</p>
+              <div class="card-links"><a class="text-link" href="./race-ready/">See how it works</a><a class="text-link text-link-muted" href="https://apps.apple.com/app/apple-store/id6773779672?pt=128070534&amp;ct=uptempo_site&amp;mt=8">App Store</a></div>
+            </div>
+          </article>
 
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/tiny-claw-game-icon.svg" width="72" height="72" alt="Tiny Claw Game logo" />
-                <span class="status-badge status-building">In development</span>
-              </div>
-              <p class="portfolio-category">Kids game</p>
+          <article class="app-card">
+            <img src="./assets/apps/tiny-claw.jpg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Play</p>
               <h3>Tiny Claw Game</h3>
-              <p>A cozy pretend arcade for kids, designed without ads or real-prize mechanics.</p>
-              <a href="/tiny-claw-game/">Learn more</a>
-            </article>
+              <p>A colorful pretend claw arcade with toys to catch and collect. Plush Picnic is free. The full arcade costs $4.99 once.</p>
+              <div class="card-links"><a class="text-link" href="./tiny-claw/">See how it works</a><a class="text-link text-link-muted" href="https://apps.apple.com/app/apple-store/id6792822139?pt=128070534&amp;ct=uptempo_site&amp;mt=8">App Store</a></div>
+            </div>
+          </article>
 
-            <article class="portfolio-card">
-              <div class="portfolio-card-header">
-                <img src="./assets/math-facts-sprint-icon.svg" width="72" height="72" alt="Math Facts Sprint logo" />
-                <span class="status-badge status-building">In development</span>
-              </div>
-              <p class="portfolio-category">Kids learning</p>
+          <article class="app-card">
+            <img src="./assets/apps/stadium-music.jpg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Team gameday</p>
+              <h3>Stadium Music</h3>
+              <p>Create a team roster, assign Apple Music tracks, trim each intro, and run the lineup from gameday mode. Four players are free. Unlimited players cost $0.99 once.</p>
+              <div class="card-links"><a class="text-link" href="./stadium-music/">See how it works</a><a class="text-link text-link-muted" href="https://apps.apple.com/app/apple-store/id6756856637?pt=128070534&amp;ct=uptempo_site&amp;mt=8">App Store</a></div>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img src="./assets/apps/photo-packs.jpg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Photo delivery</p>
+              <h3>Photo Packs</h3>
+              <p>Resize, rename, watermark, and export a whole client gallery from iPhone or iPad. Pro is a one-time $4.99 purchase.</p>
+              <div class="card-links"><a class="text-link" href="./photo-packs/">See how it works</a><a class="text-link text-link-muted" href="https://apps.apple.com/app/apple-store/id6759537566?pt=128070534&amp;ct=uptempo_site&amp;mt=8">App Store</a></div>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img src="./assets/apps/growbie.jpg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Child growth</p>
+              <h3>Growbie</h3>
+              <p>Keep height, weight, growth curves, and milestones together in one private app. Growbie is free.</p>
+              <div class="card-links"><a class="text-link" href="./growbie/">See how it works</a><a class="text-link text-link-muted" href="https://apps.apple.com/app/apple-store/id6752531303?pt=128070534&amp;ct=uptempo_site&amp;mt=8">App Store</a></div>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img src="./assets/math-facts-sprint-icon.svg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Kids learning · In development</p>
               <h3>Math Facts Sprint</h3>
               <p>Short math fact practice for kids building fluency, confidence, and recall.</p>
-              <a href="/math-facts-sprint/">Learn more</a>
-            </article>
+              <div class="card-links"><a class="text-link" href="./math-facts-sprint/">See what is planned</a><a class="text-link text-link-muted" href="./math-facts-sprint/support.html">Support</a></div>
+            </div>
+          </article>
 
-          </div>
+          <article class="app-card">
+            <img src="./assets/music-prod-studio-icon.svg" alt="" width="512" height="512" loading="lazy" />
+            <div class="app-copy">
+              <p class="card-kicker">Music creation · Web app</p>
+              <h3>Music Prod Studio</h3>
+              <p>AI vocals for producers turning beats into shareable song ideas.</p>
+              <div class="card-links"><a class="text-link" href="https://musicprodstudio.com">Visit the site</a></div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="studio" class="section studio-section">
-        <div class="container studio-grid">
-          <div class="studio-copy">
-            <p class="eyebrow">Studio</p>
-            <h2>Useful ideas, built with care.</h2>
-            <p>
-              Uptempo turns useful ideas into helpful apps, practical tools, and thoughtful digital products. We care about clear flows, warm details, and experiences people can enjoy.
-            </p>
-          </div>
-          <div class="section-illustration studio-illustration" aria-hidden="true">
-            <img src="./assets/studio-ideas-clean.jpg?v=20260602" width="1774" height="887" alt="" />
-          </div>
+      <section class="section stores-section" id="stores" aria-label="Our online stores">
+        <div class="store-group">
+          <article class="store-card store-card-malia">
+            <p class="card-kicker">Family travel</p>
+            <h3>Malia Travel</h3>
+            <p>Travel products and packing guides for getting out the door, staying organized, and making the trip feel easier.</p>
+            <a class="store-link" href="https://maliatravel.com/?utm_source=uptempo&amp;utm_medium=referral&amp;utm_campaign=portfolio_home&amp;utm_content=malia_store">Visit Malia Travel</a>
+          </article>
+          <article class="store-card store-card-savvy">
+            <p class="card-kicker">The kitchen</p>
+            <h3>The Savvy Chefs</h3>
+            <p>Kitchen tools and cooking essentials chosen for the prep, serving, and everyday jobs that happen again and again.</p>
+            <a class="store-link" href="https://thesavvychefs.com/?utm_source=uptempo&amp;utm_medium=referral&amp;utm_campaign=portfolio_home&amp;utm_content=savvy_store">Visit The Savvy Chefs</a>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="section acquisition-section">
-        <div class="container acquisition-card">
-          <div>
-            <p class="eyebrow">Collaborate</p>
-            <h2>Have an idea worth exploring?</h2>
-            <p>
-              Send it over. We like practical problems, focused audiences, and products that could be simpler, warmer, or more useful.
-            </p>
-          </div>
-          <a href="mailto:info@uptempoenterprises.com?subject=Uptempo%20product%20idea" class="btn btn-primary">Start a conversation</a>
-        </div>
+      <section class="studio-note" aria-labelledby="studio-note-title">
+        <p class="eyebrow">Why Uptempo exists</p>
+        <h2 id="studio-note-title">We like making things.</h2>
+        <p>Sometimes that becomes an app. Sometimes it becomes a store. Uptempo is where those ideas get built, launched, and improved.</p>
       </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container footer-grid">
-        <div>
-          <a href="/" class="footer-logo">Uptempo Enterprises</a>
-          <p>A product creation studio building useful apps for everyday life.</p>
-        </div>
-        <nav aria-label="Footer company links">
-          <h2>Company</h2>
-          <a href="/#products">Products</a>
-          <a href="/#studio">Studio</a>
-          <a href="mailto:info@uptempoenterprises.com">Contact</a>
-        </nav>
-        <nav aria-label="Footer support links">
-          <h2>Support</h2>
-          <a href="/support.html">Support hub</a>
-          <a href="mailto:info@uptempoenterprises.com">Contact support</a>
-        </nav>
-      </div>
+    <footer>
+      <div><strong>Uptempo Enterprises LLC</strong><p>Bringing creative ideas to life.</p></div>
+      <nav aria-label="Footer navigation"><a href="./support.html">Support</a><a href="mailto:info@uptempoenterprises.com">Contact</a></nav>
     </footer>
   </body>
 </html>

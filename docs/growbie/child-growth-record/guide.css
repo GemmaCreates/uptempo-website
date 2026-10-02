@@ -1,0 +1,165 @@
+.guide-main {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 70px 0 110px;
+}
+
+.guide-hero {
+  max-width: 830px;
+  padding-bottom: 52px;
+}
+
+.guide-hero h1 {
+  font-size: clamp(3.2rem, 8vw, 6.4rem);
+}
+
+.guide-lede {
+  max-width: 720px;
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.12rem, 2vw, 1.35rem);
+}
+
+.guide-body {
+  border-top: 1px solid var(--line);
+}
+
+.guide-body section {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 22px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.step-number {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff;
+  background: var(--green);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.guide-body h2,
+.guide-note h2,
+.guide-sources h2,
+.guide-cta h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.guide-body p:not(.step-number) {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.guide-note,
+.guide-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+  gap: 40px;
+  margin-top: 64px;
+  padding: clamp(28px, 5vw, 48px);
+  border-radius: 26px;
+}
+
+.guide-note {
+  color: #fff;
+  background: var(--green-dark);
+}
+
+.guide-note .eyebrow {
+  color: var(--mint);
+}
+
+.guide-note > p {
+  margin: 0;
+  color: #d5e7e1;
+}
+
+.guide-sources {
+  margin-top: 64px;
+  padding: 0 4px;
+}
+
+.guide-sources > p {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-top: 18px;
+}
+
+.source-links a {
+  color: var(--green-dark);
+  font-weight: 780;
+}
+
+.guide-cta {
+  align-items: center;
+  background: var(--mint);
+}
+
+.guide-cta p:last-child {
+  margin: 13px 0 0;
+  color: var(--muted);
+}
+
+.guide-cta .button {
+  justify-self: end;
+}
+
+@media (max-width: 700px) {
+  .guide-main {
+    width: calc(100% - 28px);
+    padding: 50px 0 80px;
+  }
+
+  .guide-hero {
+    padding-bottom: 38px;
+  }
+
+  .guide-hero h1 {
+    font-size: clamp(2.8rem, 14vw, 4.2rem);
+  }
+
+  .guide-body section {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .guide-note,
+  .guide-cta {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 42px;
+    border-radius: 20px;
+  }
+
+  .guide-sources {
+    margin-top: 42px;
+  }
+
+  .guide-cta .button {
+    width: 100%;
+  }
+}
