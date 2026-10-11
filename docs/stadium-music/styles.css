@@ -78,3 +78,5 @@ a:focus-visible { outline: 3px solid #73d100; outline-offset: 4px; }
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+.inbound-details{max-width:900px;width:calc(100% - 40px);margin:0 auto 60px;line-height:1.65}.inbound-details h2{font-size:1.8rem;margin-top:36px}.inbound-details li{margin:15px 0}.inbound-details details{padding:16px 0;border-bottom:1px solid #ccd3da}.inbound-details summary{cursor:pointer;font-weight:bold}.inbound-details button{padding:12px 20px;font:inherit;border-radius:8px;cursor:pointer}.inbound-details a{overflow-wrap:anywhere}
