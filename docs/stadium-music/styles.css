@@ -4,7 +4,7 @@
   --muted: #59616d;
   --paper: #f5f7f9;
   --card: #ffffff;
-  --blue: #1388ef;
+  --blue: #075ead;
   --blue-dark: #075ead;
   --lime: #86f300;
   --night: #111419;
@@ -30,7 +30,7 @@ h1, h2, h3, p { text-wrap: pretty; }
 .eyebrow { margin: 0 0 13px; color: var(--blue-dark); font-size: 0.78rem; font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase; }
 h1 { max-width: 810px; margin: 0; font-size: clamp(3.5rem, 7vw, 7rem); line-height: 0.91; letter-spacing: -0.068em; }
 .hero-lede { max-width: 680px; margin: 27px 0 0; color: var(--muted); font-size: clamp(1.08rem, 1.8vw, 1.3rem); }
-.hero-actions { display: flex; margin-top: 33px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 33px; }
 .requirement { margin: 13px 0 0; color: var(--muted); font-size: 0.88rem; }
 .button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; padding: 13px 21px; border: 2px solid transparent; border-radius: 12px; font-weight: 840; text-align: center; text-decoration: none; transition: transform 160ms ease, background 160ms ease, border-color 160ms ease; }
 .button:hover { transform: translateY(-2px); }
